@@ -1,47 +1,41 @@
-PEP8 Compliance:
+# Code Refactoring and Quality Improvements
 
-Consistent indentation (4 spaces)
+## PEP8 Compliance
+- Consistent indentation using 4 spaces
+- Proper spacing around operators and after commas
+- Optimized line length (maximum 79 characters)
 
-Proper spacing around operators and after commas
+## Typing Added
+- Type hints for all function parameters and return values
+- Clear data structure definitions using `List[Tuple[str, int]]`
 
-Line length optimized (max 79 chars)
+## Functions with English Documentation
+- **initialize_deck()**  
+  Creates and initializes the card deck.
 
-Typing Added:
+- **draw_card()**  
+  Handles card drawing logic, including deck state checks.
 
-Type hints for function parameters and return values
+- **check_game_over()**  
+  Contains all game-ending conditions.
 
-Clear data structure definitions using List[Tuple[str, int]]
+- **main()**  
+  Main game loop with a detailed description of the gameplay flow.
 
-Functions with English Documentation:
+## Code Structure
+- Separated game logic into reusable, well-defined functions
+- Removed duplicate code that was present twice in the original version
+- Improved variable naming for better readability  
+  (e.g., `aw` → `card`)
 
-initialize_deck(): Creates the card deck
+## Translation to English
+- Card names translated to English
+- All game messages displayed in English
+- Comments and documentation written in English
 
-draw_card(): Handles card drawing logic
+## Error Handling
+- Added a check for an empty deck in `draw_card()`
+- Implemented more robust user input handling
 
-check_game_over(): Contains game end conditions
-
-main(): Main game loop with description
-
-Code Structure:
-
-Separated game logic into reusable functions
-
-Removed duplicate code (was present twice in original)
-
-Improved variable names (e.g., aw → card)
-
-Translation to English:
-
-Card names translated to English
-
-Game messages in English
-
-Comments in English
-
-Error Handling:
-
-Added check for empty deck in draw_card()
-
-More robust input handling
-
-The game maintains the original Russian card game logic but with improved code quality and English interface.
+## Notes
+The game fully preserves the original Russian card game logic while significantly improving code quality, readability, and maintainability, as well as providing a complete English-language interface.
